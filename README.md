@@ -2,25 +2,35 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
-## Development server
+## Cadastro de Usuário
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto é uma aplicação Angular que permite o cadastro de usuários, validação de dados e exibição de informações salvas. A aplicação inclui uma página de cadastro e uma página de exibição de dados, utilizando localStorage para persistência.
 
-## Code scaffolding
+## Requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Angular (versão mais recente), Node.js e npm
 
-## Build
+## Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Formulário de cadastro com campos para nome, e-mail e senha.
+2. Validação de e-mail e senha (mínimo de 8 caracteres).
+3. Persistência de dados no localStorage.
+4. Renderização condicional para exibir uma mensagem de erro se não houver dados salvos.
+5. Mensagem de erro ao tentar acessar rota sem preencher o form
 
-## Running unit tests
+## Instruções de Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. git clone <URL do repositório>
+2. cd nome-do-projeto
+3. npm install
+4. ng serve
 
-## Running end-to-end tests
+## Uso
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Na página de cadastro, preencha os campos obrigatórios (nome, e-mail e senha).
+2. Após preencher, clique no botão "Cadastrar" para salvar os dados.
+3. Você será redirecionado para a página que exibe os dados salvos.
+4. Se não houver dados salvos no localStorage, uma mensagem de erro será exibida.
 
 ## Further help
 
