@@ -1,0 +1,20 @@
+<div class="exibir-dados-container">
+  <h1>Informações</h1>
+
+  <div *ngIf='!userData' class="info-container error">
+    <p class="error">Nenhum dado encontrado. Por favor, volte e preencha o formulário de cadastro.</p>
+  </div>
+
+  <div *ngIf="userData">
+    <div class="info-container">
+      <label>Nome</label>
+      <p class="information"><strong>{{ userData.nome }}</strong></p>
+    </div>
+
+    <div class="info-container">
+      <span>Email</span>
+      <p class="information"><strong>{{ userData.email }}</strong></p>
+    </div>
+  </div>
+
+</div>
