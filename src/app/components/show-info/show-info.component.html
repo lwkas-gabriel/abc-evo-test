@@ -7,14 +7,14 @@
     <p class="error">Nenhum dado encontrado. Por favor, volte e preencha o formulário de cadastro.</p>
   </div>
 
-  <div *ngIf="userData">
-    <div class="info-container">
+  <div *ngIf="userData" class="info-container">
+    <div>
       <label>Nome</label>
       <p class="information"><strong>{{ userData.nome }}</strong></p>
     </div>
 
-    <div class="info-container">
-      <span>Email</span>
+    <div>
+      <label>Email</label>
       <p class="information"><strong>{{ userData.email }}</strong></p>
     </div>
   </div>

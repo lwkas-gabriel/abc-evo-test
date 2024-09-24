@@ -18,6 +18,6 @@ export class ShowInfoComponent implements OnInit{
   ngOnInit() {
     const data = localStorage.getItem('userData');
     this.userData = data ? JSON.parse(data) : null;
-    localStorage.removeItem('userData');
+    //localStorage.removeItem('userData');
   }
 }
