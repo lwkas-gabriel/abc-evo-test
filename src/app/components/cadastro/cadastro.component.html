@@ -1,0 +1,42 @@
+<form action="" (ngSubmit)="onSubmit()">
+  <h1>Cadastro</h1>
+  <div class="form-info">
+    <label for="nome">NOME:</label>
+    <input
+      type="text"
+      id="nome"
+      name="nome"
+      [(ngModel)]="userData.nome"
+      required placeholder="Digite seu nome"
+    />
+    <div *ngIf="errors.nome" class="error">{{ errors.nome }}</div>
+  </div>
+
+  <div class="form-info">
+    <label for="">E-MAIL:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      [(ngModel)]="userData.email"
+      required
+      class="form-control"
+      placeholder="Ex: carlos@uol.com.br"
+    />
+    <div *ngIf="errors.email" class="error">{{ errors.email }}</div>
+  </div>
+
+  <div class="form-info">
+    <label for="">SENHA:</label>
+    <input
+      type="password"
+      id="email"
+      name="email"
+      [(ngModel)]="userData.senha"
+      placeholder="Sua senha precisa ter pelo menos 8 caracteres"
+    />
+    <div *ngIf="errors.senha" class="error">{{ errors.senha }}</div>
+  </div>
+
+  <button type="submit">SALVAR</button>
+</form>
